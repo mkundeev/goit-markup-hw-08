@@ -1,0 +1,37 @@
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team-list {
+    
+    &__title {
+        color: var(--title-text-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__item {
+        border-radius: 0 0 4px 4px;
+        background-color: var(--primery-background-color);
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+            0 1px 3px rgba(0, 0, 0, 0.12);
+        flex-basis: calc(100% / 4 - 30px);
+        padding-bottom: 30px;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__foto {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
