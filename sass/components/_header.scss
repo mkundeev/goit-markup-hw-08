@@ -135,6 +135,7 @@
 .header-social {
     display: flex;
     align-items: center;
+    // flex-wrap: wrap;
     padding-right: -10px;
     padding-left: -10px;
     &__item {
