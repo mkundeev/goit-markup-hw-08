@@ -247,7 +247,7 @@ a {
   top: 10px;
   right: 15px;
   background-color: #fff;
-  z-index: 4;
+  z-index: 1;
 }
 
 .button-menu__icon-close:hover {
@@ -260,16 +260,10 @@ a {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 2;
 }
 
 .button-menu__icon-menu:hover {
   fill: var(--accent-color);
-}
-
-.button-menu__icon-menu.is-close {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .logo {
@@ -390,7 +384,7 @@ a {
 }
 
 .portofolio-list {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
@@ -399,14 +393,11 @@ a {
 .portofolio-list__item {
   border-radius: 4px;
   transition: box-shadow 250ms var(--time-function);
+  margin-bottom: 15px;
 }
 
 .portofolio-list__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.portofolio-list__item:first-child {
-  margin-bottom: 15px;
 }
 
 .portfolio__button:hover,

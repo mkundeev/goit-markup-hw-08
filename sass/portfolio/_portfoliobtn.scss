@@ -1,5 +1,5 @@
 .portofolio-list {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     display: flex;
     
     flex-wrap: wrap;
@@ -7,15 +7,13 @@
     &__item {
         border-radius: 4px;
         transition: box-shadow 250ms var(--time-function);
+        margin-bottom: 15px;
     }
     &__item:not(:last-child) {
         margin-right: 8px;
        
     }
-    &__item:first-child {
-        margin-bottom: 15px;
     
-    }
 }
 
 

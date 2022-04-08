@@ -5,6 +5,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
 
 
     transition: opacity 500ms var(--time-function);
