@@ -1,11 +1,11 @@
 .examples-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-left: -30px;
+    // margin-bottom: -30px;
     &__item {
-        flex-basis: calc(100% / 3 - 30px);
-        margin-left: 30px;
+        // flex-basis: calc(100% / 3 - 30px);
+        // margin-left: 30px;
         margin-bottom: 30px;
     
         transition: box-shadow 250ms var(--time-function);
@@ -14,6 +14,10 @@
         box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
             0 1px 1px rgba(0, 0, 0, 0.12);
     
+    }
+    & img{
+        width: 100%;
+        
     }
 }
 
@@ -49,6 +53,7 @@
         position: relative;
         overflow: hidden;
         display: block;
+        z-index: -1;
     }
     &__overlay {
         position: absolute;
