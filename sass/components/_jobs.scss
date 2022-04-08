@@ -1,5 +1,7 @@
 .job.section {
-    display: none;
+    @media screen and (max-width: 1199px) {
+    display: none;}
+
 }
 .job-list {
     display: flex;

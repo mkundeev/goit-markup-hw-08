@@ -1,6 +1,4 @@
 .hero {
-    
-
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
@@ -12,6 +10,12 @@
     background-position: center;
     background-color: var(--footer-hero-background-color);
     background-size: cover;
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 
     &__title {
         color: var(--primery-background-color);

@@ -3,6 +3,12 @@
 }
 
 .team-list {
+    margin-bottom: -30px;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;}
     
     &__title {
         color: var(--title-text-color);
@@ -26,10 +32,17 @@
             0 1px 3px rgba(0, 0, 0, 0.12);
         flex-basis: calc(100% / 4 - 30px);
         padding-bottom: 30px;
-    }
-    &__item:not(:last-child) {
         margin-bottom: 30px;
+        
+        @media screen and (min-width: $tablet) {
+            flex-basis: calc(100% / 2 - 30px);
+            margin-left: 30px;
+        }
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc(100% / 4 - 30px);
+        }
     }
+   
     &__foto {
         margin-bottom: 30px;
         width: 100%;

@@ -4,12 +4,22 @@
     padding-bottom: 60px;
     
     &__container {
-    max-width: 480px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+    }
+
 
     &__call {
     display: block;
@@ -25,6 +35,15 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
 }
 
 
@@ -39,11 +58,17 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
-    margin-bottom: 60px;
+    
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+        
+    }
 
     &__item:not(:last-child) {
         margin-bottom: 9px;
+        
     }
     
     &__link {
@@ -59,6 +84,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media screen and (min-width: $tablet) {
+        margin-top: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+    margin-bottom: 0;}
+}
+.footer-address-social {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;    
+}
 }
 
 .footer-sign-form {
@@ -66,6 +103,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+        align-items: flex-start;
+        width: 570px;
+        margin-top: 12px;
+    }
 }
 
 .footer-form {
@@ -73,6 +116,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
    
     &__input {
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -85,6 +132,15 @@
         line-height: 1.25;
         color: inherit;
         margin-bottom: 20px;
+        @media screen and (min-width: $tablet) {
+            width: 450px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 100%;
+            margin-right: 12px;
+            margin-bottom: 0;
+        }
+
     }
     &__icon {
         fill: #fff;
