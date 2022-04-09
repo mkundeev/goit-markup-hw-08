@@ -5,27 +5,27 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../../images/header-mobile.jpg");
+        url("./images/header-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--footer-hero-background-color);
     background-size: cover;
     @media (min-resolution: 2dppx) {
-        background-image: url("../../images/header-mobile@2x.jpg");
+        background-image: url("./images/header-mobile@2x.jpg");
     }
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
-        background-image: url("../../images/header-tablet.jpg");
+        background-image: url("./images/header-tablet.jpg");
         @media (min-resolution: 2dppx) {
-            background-image: url("../../images/header-tablet@2x.jpg");
+            background-image: url("./images/header-tablet@2x.jpg");
     }
     }
     @media screen and (min-width: $desktop) {
         max-width: 1600px;
-        background-image: url("../../images/header-desktop.jpg");
+        background-image: url("./images/header-desktop.jpg");
         
         @media (min-resolution: 2dppx) {
-            background-image: url("../../images/header-desktop@2x.jpg");
+            background-image: url("./images/header-desktop@2x.jpg");
     }
     }
     &__title {
