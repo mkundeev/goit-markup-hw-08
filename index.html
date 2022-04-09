@@ -122,15 +122,21 @@
                 <h2 class="job__title section__title">Чем мы занимаемся</h2>
                 <ul class="job-list">
                     <li class="job-list__item">
-                        <img src="./images/box1.jpg " alt="человек набирает код на комютере" width="370">
+                        <img 
+                        srcset="./images/job1-370.jpg 1x, ./images/job1-740.jpg 2x"
+                        src="./images/job1-370.jpg " alt="человек набирает код на комютере" width="370">
                         <p class="job-list__description">Десктопные приложения</p>
                     </li>
                     <li class="job-list__item">
-                        <img src="./images/box2.jpg" alt="подбор макета для мобильного" width="370">
+                        <img
+                        srcset="./images/job2-370.jpg 1x, ./images/job2-740.jpg 2x" 
+                        src="./images/job2-370.jpg" alt="подбор макета для мобильного" width="370">
                         <p class="job-list__description">Мобильные приложения</p>
                     </li>
                     <li class="job-list__item">
-                        <img src="./images/box3.jpg" alt="градиенты цвета на планшете" width="370">
+                        <img 
+                        srcset="./images/job3-370.jpg 1x, ./images/job3-740.jpg 2x"
+                        src="./images/job3-370.jpg" alt="градиенты цвета на планшете" width="370">
                         <p class="job-list__description">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -142,7 +148,20 @@
                 <h2 class="team__title section__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img class="team-list__foto" src="./images/img1.jpg" alt="фото Игорь Демьяненко" width="270">
+                        <picture>
+                        <source 
+                        srcset=" ./images/team/igor-des-270.jpg 1x, ./images/team/igor-des-540.jpg 2x" 
+                        media="(min-width: 1200px)" />
+                        <source 
+                        srcset="./images/team/igor-tab-354.jpg 1x, ./images/team/igor-tab-708.jpg 2x" 
+                        media="(min-width: 768px)"/> 
+                        <img class="team-list__foto" 
+                        srcset="
+                        ./images/team/igor-mob-450.jpg 1x,
+                        ./images/team/igor-mob-900.jpg 2x" 
+                        src="./images/team/igor-mob-450.jpg" 
+                        alt="фото Игорь Демьяненко"/>
+                        </picture>
                         <h3 class="team-list__title">Игорь Демьяненко</h3>
                         <p lang="en" class="team-list__text">Product Designer</p>
                         <ul class="social-list">
@@ -177,7 +196,15 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__foto" src="./images/img2.jpg" alt="фото Ольга Репина" width="270">
+                        <picture>
+                            <source srcset=" ./images/team/olga-des-270.jpg 1x, ./images/team/olga-des-540.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/olga-tab-354.jpg 1x, ./images/team/olga-tab-708.jpg 2x" media="(min-width: 768px)" />
+                            <img class="team-list__foto" srcset="
+                                                ./images/team/olga-mob-450.jpg 1x,
+                                                ./images/team/olga-mob-900.jpg 2x" src="./images/team/olga-mob-450.jpg"
+                                alt="фото Ольга Репина" />
+                        </picture>
                         <h3 class="team-list__title">Ольга Репина</h3>
                         <p lang="en" class="team-list__text">Frontend Developer</p>
                         <ul class="social-list">
@@ -212,7 +239,15 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__foto" src="./images/img3.jpg" alt="фото Николай Тарасов" width="270">
+                        <picture>
+                            <source srcset=" ./images/team/nick-des-270.jpg 1x, ./images/team/nick-des-540.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/nick-tab-354.jpg 1x, ./images/team/nick-tab-708.jpg 2x" media="(min-width: 768px)" />
+                            <img class="team-list__foto" srcset="
+                                                ./images/team/nick-mob-450.jpg 1x,
+                                                ./images/team/nick-mob-900.jpg 2x" src="./images/team/nick-mob-450.jpg"
+                                alt="фото Николай Тарасов" />
+                        </picture>
                         <h3 class="team-list__title">Николай Тарасов</h3>
                         <p lang="en" class="team-list__text"> Marketing</p>
                         <ul class="social-list">
@@ -247,7 +282,15 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__foto" src="./images/img4.jpg" alt="фото Михаил Ермаков" width="270">
+                        <picture>
+                            <source srcset=" ./images/team/michal-des-270.jpg 1x, ./images/team/michal-des-540.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/michal-tab-354.jpg 1x, ./images/team/michal-tab-708.jpg 2x" media="(min-width: 768px)" />
+                            <img class="team-list__foto" srcset="
+                                                ./images/team/michal-mob-450.jpg 1x,
+                                                ./images/team/michal-mob-900.jpg 2x" src="./images/team/michal-mob-450.jpg"
+                                alt="фото Михаил Ермаков" />
+                        </picture>
                         <h3 class="team-list__title">Михаил Ермаков</h3>
                         <p lang="en" class="team-list__text">UI Designer</p>
                         <ul class="social-list">
