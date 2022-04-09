@@ -87,7 +87,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  
 }
 
 @media screen and (min-width: 480px) {
