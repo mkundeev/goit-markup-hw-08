@@ -1,22 +1,33 @@
 .hero {
-    max-width: 480px;
+    max-width: $mobile;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/bg-img.jpg");
+        url("../../images/header-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--footer-hero-background-color);
     background-size: cover;
+    @media (min-resolution: 2dppx) {
+        background-image: url("../../images/header-mobile@2x.jpg");
+    }
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
+        background-image: url("../../images/header-tablet.jpg");
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../images/header-tablet@2x.jpg");
+    }
     }
     @media screen and (min-width: $desktop) {
-        max-width: $desktop;
+        max-width: 1600px;
+        background-image: url("../../images/header-desktop.jpg");
+        
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../images/header-desktop@2x.jpg");
     }
-
+    }
     &__title {
         color: var(--primery-background-color);
         font-size: 26px;
@@ -30,11 +41,18 @@
         margin-bottom: 30px;
         margin-top: 0;
         width: 360px;
+        @media screen and (min-width: $desktop) {
+        font-size: 40px;
+        width: 696px;
+    }
     }
 }
 .container--hero {
 text-align: center;
 padding-top: 118px;
 padding-bottom: 118px;
+@media screen and (min-width: $desktop) {
+padding-top: 200px;
+padding-bottom: 200px;}
 
 }
