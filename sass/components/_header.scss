@@ -125,6 +125,9 @@
         justify-content: center;}
 }
 .contacts-nav__link {
+    
+    display: flex;
+    align-items: center;
 
     fill: var(--main-text-color);
     transition: color 250ms var(--time-function);
@@ -179,9 +182,13 @@
 .icon-header {
     fill: var(--main-text-color);
     margin-right: 8px;
+    
     transition: fill 250ms var(--time-function);
     @media screen and (max-width: 767px) {
     display: none;}
+    @media screen and (min-width: $desktop) {
+        margin-right: 10px;
+    }
 }
 
 .header-social {
