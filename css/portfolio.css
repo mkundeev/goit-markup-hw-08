@@ -57,6 +57,13 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section__title {
   font-size: 28px;
   font-weight: 700;
@@ -64,6 +71,13 @@ a {
   color: var(--title-text-color);
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .section--no-padding-top {
@@ -121,26 +135,32 @@ a {
 
 .header-menu {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
   .header-menu {
-    margin-left: 84px;
+    margin-left: 88px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-menu {
+    margin-left: 93px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .header-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    min-height: 796px;
+    width: 100vw;
+    height: 100vh;
     background-color: #fff;
     padding: 48px 40px;
-    opacity: 1;
+    z-index: 1;
     flex-direction: column;
     opacity: 1;
   }
@@ -155,12 +175,6 @@ a {
 
 .navigation {
   display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  .navigation {
-    margin-bottom: auto;
-  }
 }
 
 .page-header__container {
@@ -180,6 +194,12 @@ a {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -238,6 +258,14 @@ a {
 @media screen and (min-width: 768px) {
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -431,6 +459,12 @@ a {
   line-height: 1.19;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
 .logo__accent-part {
   color: var(--accent-color);
 }
@@ -551,6 +585,12 @@ a {
   .portofolio-list {
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portofolio-list {
+    margin-bottom: 50px;
   }
 }
 

@@ -3,11 +3,14 @@
     flex-wrap: wrap;
     margin-top: -15px;
     margin-bottom: 40px;
-
+    
     @media screen and (min-width: $tablet) {
         justify-content: center;
         margin-bottom: 30px;
     }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;}
+
     &__item {
         border-radius: 4px;
         transition: box-shadow 250ms var(--time-function);

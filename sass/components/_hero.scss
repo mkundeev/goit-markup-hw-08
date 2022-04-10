@@ -11,21 +11,31 @@
     background-color: var(--footer-hero-background-color);
     background-size: cover;
     @media (min-resolution: 2dppx) {
-        background-image: url("../images/header-mobile@2x.jpg");
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),url("../images/header-mobile@2x.jpg");
     }
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
-        background-image: url("../images/header-tablet.jpg");
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("../images/header-tablet.jpg");
         @media (min-resolution: 2dppx) {
-            background-image: url("../images/header-tablet@2x.jpg");
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../images/header-tablet@2x.jpg");
     }
     }
     @media screen and (min-width: $desktop) {
         max-width: 1600px;
-        background-image: url("../images/header-desktop.jpg");
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)) ,url("../images/header-desktop.jpg");
         
         @media (min-resolution: 2dppx) {
-            background-image: url("../images/header-desktop@2x.jpg");
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../images/header-desktop@2x.jpg");
     }
     }
     &__title {
@@ -42,7 +52,7 @@
         margin-top: 0;
         width: 360px;
         @media screen and (min-width: $desktop) {
-        font-size: 40px;
+        font-size: 44px;
         width: 696px;
     }
     }

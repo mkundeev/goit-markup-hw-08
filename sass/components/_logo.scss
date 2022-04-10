@@ -4,6 +4,9 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.19;
+    @media screen and (min-width: $desktop) {
+    font-size: 26px;}
+
     &__accent-part {
     color: var(--accent-color);
 }
